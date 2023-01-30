@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  position: relative;
+  margin: 200px auto;
+  height: 300px;
+  width: 500px;
+  border: 1px solid #eee;
+  overflow-y: scroll;
+}
+#infinite-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+#list {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+#list > li {
+  height: 30px;
+  width: 100%;
+}
+#list > li.green-item {
+  background-color: #c5ffc5;
+}
+#list > li.red-item {
+  background-color: #ffd5d5;
+}
+
